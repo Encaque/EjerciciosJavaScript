@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1> Ejercicio Calculadora JavaScript </h1>
+    <script>
+    var numeroSecreto = 3;
+    var seguirJugando = true;
+
+    while (seguirJugando == true) {
+      for (var i = 0; i < 6; i++) {
+        var numUsuario = parseInt(prompt("Cual es el numero secreto?"));
+        if (numUsuario == numeroSecreto) {
+          alert("Has acertado");
+          break;
+        } else {
+      alert("Has fallado");
+    }
+   }
+ } else {
+   prompt("Quieres volver a jugar?");
+ }
+    </script>
+  </body>
+</html>

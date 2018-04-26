@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1> Ejercicio Calculadora JavaScript </h1>
+    <script>
+    var numero1 = parseInt(prompt("Introduce un numero"));
+    var numero2 = parseInt(prompt("Introduce otro numero"));
+    var operacion = prompt("introduce la operacion que quieres realizar");
+
+    if (operacion === "+") {
+      resultado = numero1 + numero2;
+    } else if (operacion === "-") {
+      resultado = numero1 - numero2;
+    } else if (operacion === "*") {
+      resultado = numero1 * numero2;
+    } else if (operacion === "/") {
+      resultado = numero1 / numero2;
+    }
+    document.write(resultado);
+    </script>
+  </body>
+</html>
