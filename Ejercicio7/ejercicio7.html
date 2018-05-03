@@ -1,0 +1,33 @@
+<h1>Ejercicio de la calculadora programado con JavaScript</h1>
+<form>
+<input type="text" id="dato1">
+<select id="cuenta">
+  <option selected="selected" value="+"> + </option>
+  <option selected="selected" value="-"> - </option>
+  <option selected="selected" value="*"> * </option>
+  <option selected="selected" value="/"> / </option>
+</select>
+<input type="text" id="dato2">
+<input type="button" value="Calcular" onClick="calcular()">
+</form><br>
+<input type="text" id="resultado">
+
+<script type="text/javascript">
+  function calcular(){
+    var cuenta document.getElementById('cuenta').value;
+    var numero1 = parseInt(getElementById('numero1').value);
+    var numero2 = parseInt(getElementById('numero2').value);
+    var resultado;
+
+    if (cuenta == "+") {
+      resultado = numero1 + numero2;
+    } else if (cuenta == "-") {
+      resultado = numero1 - numero2;
+    } else if (cuenta == "*") {
+      resultado = numero1 * numero2;
+    } else if (cuenta == "/") {
+      resultado = numero1 / numero2;
+    }
+    document.getElementById('resultado').value=resultado;
+  }
+</script>

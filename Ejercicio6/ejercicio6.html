@@ -1,0 +1,15 @@
+<form>
+  Grados centigrados:
+  <input type="text" id="datoIntroducido"><br>
+  Grados Farenheit:
+  <input type="text" id="resultado"><br>
+  <input type="button" value="Analizar" onclick="convertir()">
+</form>
+
+<script language="javascript">
+function convertir(){
+  var datoIntroducido = document.getElementById("datoIntroducido").value;
+  datoIntroducido = datoIntroducido * 9/5 + 32;
+  document.getElementById("resultado").value = datoIntroducido;
+}
+</script>
