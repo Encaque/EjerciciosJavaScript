@@ -1,0 +1,19 @@
+<html>
+<body>
+<h1>Emoji sonriente o emoji triste</h1>
+<p>Segun el boton que presiones, el emoji estará triste o estará feliz</p>
+
+<script type="text/javascript">
+	function emojitriste() {
+		document.getElementById("feliz").src="https://images.emojiterra.com/google/android-oreo/512px/2639.png";
+}
+	function emojifeliz() {
+		document.getElementById("feliz").src="https://images.emojiterra.com/google/android-oreo/512px/1f92d.png";
+}
+</script>
+
+<button onclick="emojitriste()" id="triste">TRISTE</button>
+<img src="https://images.emojiterra.com/google/android-nougat/512px/1f914.png" id="feliz">
+<button onclick="emojifeliz()" id="feliz">FELIZ</button>
+</body>
+</html>
