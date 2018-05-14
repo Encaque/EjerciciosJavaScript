@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script>
+
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.loop = true;
+        audio.play();
+       }
+       function pause() {
+         audio.pause();
+       }
+
+    </script>
+  </head>
+
+  <body>
+    <h1> Escucha la canción que tenemos preparada para ti </h1>
+    <p> Si no te gusta la canción es tan fácil como dale al botón de pause </p>
+
+    <button onclick="play()">Play</button>
+    <button onclick="pause()">Pause</button>
+      <audio id="audio" src="aullidohusky.mp3" type="audio/mp3"></audio>
+  </body>
+</html>
