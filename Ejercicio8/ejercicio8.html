@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Convertidor euros a dólares</title>
+<meta name="description" content="Convertidor de euros a dólares">
+<script>
+  function conversion(){ //Declaramos la funcion
+  var valor = document.getElementById("dato").value; //Definimos el valor de entrada y usamos el getElementById
+  valor = valor*1.23; //1.23 es el valor del dólar comparado al euro;
+  document.getElementById("resultado").value = valor; //Con esto pretendemos obtener el resultado
+ }
+ </script>
+ </head>
+ <body>
+ <h1>Convertidor de euros a dólares</h1>
+ <form>
+ Euros: <input id="dato" type="text"><br>
+ Dolares: <input id="resultado" type="text"><br>
+ <input value="Convertir" onclick="conversion()" type="button"> <!--Le asignamos en el onClick el nombre de nuestra variable -->
+ </form>
+ </body>
+ </html>
