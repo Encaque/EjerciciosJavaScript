@@ -8,7 +8,7 @@
 <body>
 
 <script>
-function calcular_avion() {
+function costeAvion() {
   var numeroNoches = document.getElementById("numNoches").value;
   var ciudad = document.getElementById("Ciudad").value;
   var coste;
@@ -22,8 +22,8 @@ function calcular_avion() {
     coste = 200;
   } else if (ciudad == "barcelona") {
     coste = 150;
-  } if(numNoches > 3){
-    resultado = coste - coste*0.9;
+  } if(numeroNoches > 3){
+    resultado = coste - coste*0.1;
   } else {
       resultado = coste;
   }
@@ -43,7 +43,7 @@ Selecciona la ciudad a la que quieres viajar:
   <option value="madrid">Madrid</option>
   <option value="barcelona">Barcelona</option>
 </select><br>
-<input type="button" onclick="calcular_avion()" value="Calcular"><br>
+<input type="button" onclick="costeAvion()" value="Calcular"><br>
 Precio:
 <input type="text" id="resultado" name="resultado" disabled = disabled><br>
 </form>
