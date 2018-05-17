@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Convertidor euros a dólares</title>
+<meta name="description" content="Convertidor de euros a dólares">
+</head>
+<body>
+
+<script>
+function calcular_avion() {
+  var numeroNoches = document.getElementById("numNoches").value;
+  var ciudad = document.getElementById("Ciudad").value;
+  var coste;
+  var resultado;
+
+  if (ciudad == "oviedo") {
+    coste = 325;
+  } else if (ciudad == "tokyo") {
+    coste = 1200;
+  } else if (ciudad == "madrid") {
+    coste = 200;
+  } else if (ciudad == "barcelona") {
+    coste = 150;
+  } if(numNoches > 3){
+    resultado = coste - coste*0.9;
+  } else {
+      resultado = coste;
+  }
+
+
+  document.getElementById("resultado").value = resultado;
+}
+</script>
+
+<form>
+Introduce el número de noches:
+<input type="text" id="numNoches" name="noche"><br>
+Selecciona la ciudad a la que quieres viajar:
+<select id="Ciudad">
+  <option value="oviedo">Oviedo</option>
+  <option value="tokyo">Tokyo</option>
+  <option value="madrid">Madrid</option>
+  <option value="barcelona">Barcelona</option>
+</select><br>
+<input type="button" onclick="calcular_avion()" value="Calcular"><br>
+Precio:
+<input type="text" id="resultado" name="resultado" disabled = disabled><br>
+</form>
+</body>
+</html>

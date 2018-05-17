@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Convertidor euros a dólares</title>
+<meta name="description" content="Convertidor de euros a dólares">
+</head>
+<body>
+
+<script>
+function calcularCoste() {
+var numNoches = document.getElementById("numNoches").value;
+numNoches = numNoches * 140;
+document.getElementById("resultado").value = numNoches;
+}
+</script>
+
+<form>
+Introduce el número de noches:
+<input type="text" id="numNoches" name="noche">
+<input type="button" onclick="calcularCoste()" value="Calcular Coste"><br>
+Precio:
+<input type="text" id="resultado" name="resultado" disabled = disabled>
+</form>
+</body>
+</html>
