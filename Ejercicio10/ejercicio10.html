@@ -23,12 +23,10 @@ function costeAvion() {
   } else if (ciudad == "barcelona") {
     coste = 150;
   } if(numeroNoches > 3){
-    resultado = coste - coste*0.1;
+    resultado = coste - coste*0.9;
   } else {
       resultado = coste;
   }
-
-
   document.getElementById("resultado").value = resultado;
 }
 </script>
