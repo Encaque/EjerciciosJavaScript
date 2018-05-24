@@ -23,14 +23,14 @@ function costeAvion() {
   } else if (ciudad == "barcelona") {
     coste = 150;
   } if(numeroNoches > 3){
-    resultado = coste - coste*0.9;
+    resultado = coste - coste*0.1;
   } else {
       resultado = coste;
   }
   document.getElementById("resultado").value = resultado;
 }
 </script>
-
+  
 <form>
 Introduce el número de noches:
 <input type="text" id="numNoches" name="noche"><br>
